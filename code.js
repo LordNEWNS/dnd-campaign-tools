@@ -22,7 +22,7 @@ function updateDC () {
     CalculateDc ();
     outPut.textContent = `DC = ` + DC;
 
-}
+};
 
 function GetValues () {
     const InputMax = parseInt(document.getElementById(`MaxHealth`).value);
@@ -42,9 +42,9 @@ function GetValues () {
         ClassBonus = 10;
     } else {
         ClassBonus = 0;
-    }
-}
+    };
+};
 
 function CalculateDc () {
     DC = 10 + HealthPercentagModifer + StatModifier - AilmentModifier + ClassBonus;
-}
+};
