@@ -1,3 +1,8 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+}
+
 body {
     display: flex;
     min-height: 100vh;
@@ -5,11 +10,21 @@ body {
     margin: 0;
 }
 
+.spacer input {
+    text-align: center;
+}
+
 input, label {
     display: block;
 }
+
 .Body {
     flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.spacer {
     display: flex;
     flex-direction: row;
 }
@@ -25,6 +40,9 @@ input, label {
     flex-direction: column;
     margin: 8px;
     text-align: center;
+    width: 170px;
+    align-items: center;
+    
 }
 
 .padding {
@@ -53,7 +71,7 @@ input {
     border-width: 2px;
     border-color: black;
     border-radius: 5px;
-    width: 160px;
+    width: 60px;
     height: 15px;
 }
 
@@ -62,8 +80,11 @@ input {
     width: 700px;
     background-color: blueviolet;
     display: flex;
-    flex-wrap: wrap;
-    
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px;
+    border-radius: 25px;
 }
 
 .SideMenue {
