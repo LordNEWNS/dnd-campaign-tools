@@ -30,10 +30,16 @@ input, label {
 }
 
 .main {
+    color: blanchedalmond;
     align-items: center;
     display: flex;
     flex-direction: column;
     flex: 1;
+    background: linear-gradient(322deg, rgb(5, 5, 5), rgb(14, 14, 14));
+}
+
+#Dc {
+    font-size: 24px;
 }
 
 .CapCalcInput {
