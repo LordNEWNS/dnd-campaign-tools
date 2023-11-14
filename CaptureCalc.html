@@ -10,17 +10,19 @@
         <header>
             <a href="index.html">Home</a>
         </header>
+        <div class="subheader">
+
+        </div>
         <div class="Body">
-            <div class="SideMenue">
-                <ul class="SideList">
-                    <a href="CaptureCalc.html">Capture Calculator</a>
-                </ul>
-            </div>
 
             <div class="main">
                 <h1>Capture DC Calculator</h1>
                 <div class="CaptureCalc" id="Calc">
-                    <div class="spacer">
+                    <div class="sphereholder TOP">
+                        <div class="inverscorner topleft"></div>
+                        <div class="inverscorner topright"></div>
+                    </div>
+                    <div class="spacer topspacer">
                         <div class="CapCalcInput">
                             <label for="MaxHealth">Max Health</label>
                             <input type="number" value="100" id="MaxHealth">
@@ -45,7 +47,7 @@
                         </div>
                     </div>
 
-                    <div class="spacer">
+                    <div class="spacer botspacer">
                         <div class="CapCalcInput">
                             <label for="Mythic">Mythic</label>
                             <input type="checkbox" id="Mythic">
@@ -56,6 +58,11 @@
                             <input type="checkbox" id="Legendary">
                         </div>
                     </div>
+                    <div class="sphereholder BOT">
+                        <div class="inverscorner bottomleft"></div>
+                        <div class="inverscorner bottomright"></div>
+                    </div>
+
                 </div>
                 <div id="DcDisplay">
                     <p id="Dc">DC = 15</p>
