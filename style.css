@@ -161,6 +161,17 @@ input {
     position: relative;
 }
 
+#calcContent {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    gap: 40px;
+}
+
 .spheres {
     display: flex;
     flex-direction: row;
