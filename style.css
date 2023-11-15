@@ -21,7 +21,14 @@ body {
     justify-content: center;
     padding: 5px;
     margin-left: 20px;
+    transition: ease-out 0.3s;
     background: linear-gradient(rgba(212, 175, 55, 0.699), rgba(212, 175, 55, 0));
+}
+
+.homebtn:hover {
+    background-color: rgb(212, 175, 55, 0.699);
+    transform-origin: top center;
+
 }
 
 .homebtn p {
@@ -80,7 +87,7 @@ input, label {
     flex-direction: column;
 }
 
-header, footer, .subheader {
+header, footer, .subheader, #DcDisplay {
     background: linear-gradient(133deg, rgb(12, 0, 26) 30%, rgb(73, 14, 139));
 }
 
@@ -101,6 +108,40 @@ header {
     position: relative;
 }
 
+#imgcuttopleft, #imgcutbotleft, #imgcuttopright, #imgcutbotright {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(imgs/monster.jpg);
+    background-size: 720px 848px;
+    background-position: -10px -90px;
+}
+
+#imgcuttopleft {
+    clip-path: circle(14% at 100% 0);
+}
+
+#imgcutbotleft {
+    clip-path: circle(14% at 100% 100%);
+}
+
+#imgcuttopright {
+    clip-path: circle(14% at 0 0);
+} 
+
+#imgcutbotright {
+    clip-path: circle(14% at 0 100%);
+}
+
+#DcDisplay {
+    padding: 4px 8px;
+    border: 2px solid rgb(212, 175, 55);
+}
+
+#DcDisplay p {
+    margin: 0;
+}
+
 .inverscorner {
     height: 80px;
     width: 80px;
@@ -110,26 +151,6 @@ header {
 
 .main {
     background-color: rgb(14, 14, 14);
-}
-
-.inverscorner {
-    background-color: rgb(14, 14, 14);
-
-}
-.sphereholder {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 780px;
-    position: absolute;
-    width: 760px;
-    height: 360px;
-}
-
-.menue {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .menue {
