@@ -10,6 +10,25 @@ body {
     margin: 0;
 }
 
+.home {
+    height: 28px;
+    display: flex;
+}
+
+.homebtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin-left: 20px;
+    background: linear-gradient(rgba(212, 175, 55, 0.699), rgba(212, 175, 55, 0));
+}
+
+.homebtn p {
+    margin: 0px;
+    
+}
+
 .spacer input {
     text-align: center;
 }
@@ -66,22 +85,37 @@ header, footer, .subheader {
 }
 
 header {
-    height: 90px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     border-bottom: 2px solid rgb(212, 175, 55);
+}
+
+#captcalcimag {
+    background-image: url(imgs/monster.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-size: 100% 100%;
+    position: relative;
 }
 
 .inverscorner {
     height: 80px;
     width: 80px;
     border-radius: 100px;
+    z-index: 1;
 }
 
-.main, .inverscorner {
+.main {
     background-color: rgb(14, 14, 14);
 }
 
+.inverscorner {
+    background-color: rgb(14, 14, 14);
+
+}
 .sphereholder {
     display: flex;
     flex-direction: column;
@@ -90,6 +124,12 @@ header {
     position: absolute;
     width: 760px;
     height: 360px;
+}
+
+.menue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .menue {
@@ -112,7 +152,7 @@ header {
     border-right: 1px solid rgb(212, 175, 55);
 }
 
-.subheader a {
+header a {
     text-decoration: none;
     color: aliceblue;
 }
