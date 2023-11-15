@@ -9,20 +9,32 @@
     <body>
         <header>
             <a href="index.html">Home</a>
+            <div class="subheader">
+                <a href="CaptureCalc.html"><div class="menue rim"><p>Tools</p></div></a>
+                <a href="campaigns.html"><div class="menue rim"><p>Campaigns</p></div></a>
+                <a href="players.html"><div class="menue rim"><p>PCs</p></div></a>
+                <a href="homebrew.html"><div class="menue"><p>Rules</p></div></a>
+    
+            </div>
         </header>
-        <div class="subheader">
-
-        </div>
+        
         <div class="Body">
 
             <div class="main">
                 <h1>Capture DC Calculator</h1>
                 <div class="CaptureCalc" id="Calc">
-                    <div class="sphereholder TOP">
-                        <div class="inverscorner topleft"></div>
-                        <div class="inverscorner topright"></div>
+                    <div class="sphereholder">
+                        <div class="spheres">
+                            <div class="inverscorner"></div>
+                            <div class="inverscorner"></div>
+                        </div>
+                        <div class="spheres">
+                            <div class="inverscorner"></div>
+                            <div class="inverscorner"></div>
+                        </div>
                     </div>
-                    <div class="spacer topspacer">
+                    <div class="goldborder"></div>
+                    <div class="spacer">
                         <div class="CapCalcInput">
                             <label for="MaxHealth">Max Health</label>
                             <input type="number" value="100" id="MaxHealth">
@@ -47,7 +59,7 @@
                         </div>
                     </div>
 
-                    <div class="spacer botspacer">
+                    <div class="spacer">
                         <div class="CapCalcInput">
                             <label for="Mythic">Mythic</label>
                             <input type="checkbox" id="Mythic">
@@ -57,10 +69,6 @@
                             <label for="Legendary">Legendary</label>
                             <input type="checkbox" id="Legendary">
                         </div>
-                    </div>
-                    <div class="sphereholder BOT">
-                        <div class="inverscorner bottomleft"></div>
-                        <div class="inverscorner bottomright"></div>
                     </div>
 
                 </div>
