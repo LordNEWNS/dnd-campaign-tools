@@ -95,7 +95,10 @@ input, label, .playercharacter {
     cursor: pointer;
 }
 
-#playercharacters 
+#playercharacters {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(12, 0, 26);
+}
 
 #Jadeth {
     background-image: url(imgs/player-charcters/jadeth.png);
