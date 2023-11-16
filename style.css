@@ -95,8 +95,22 @@ input, label, .playercharacter {
     cursor: pointer;
 }
 
+#playercharacters 
+
 #Jadeth {
     background-image: url(imgs/player-charcters/jadeth.png);
+}
+
+#slender {
+    background-image: url(imgs/player-charcters/slender.jpg);
+}
+
+#shade {
+    background-image: url(imgs/player-charcters/shade.jpg);
+}
+
+#henry {
+    background-image: url(imgs/player-charcters/henry.jpg);
 }
 
 .scrolldownparent {
