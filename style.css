@@ -76,8 +76,8 @@ input, label, .playercharacter {
     flex-direction: row;
     align-items: center;
     height: 230px;
-    gap: 30px;
-    justify-content: space-around;
+    gap: 40px;
+    justify-content: left;
     overflow: auto;
 }
 
@@ -127,6 +127,8 @@ input, label, .playercharacter {
     text-align: center;
     align-items: center;
     position: relative;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .card label {
