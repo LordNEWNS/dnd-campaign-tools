@@ -67,6 +67,11 @@ input, label, .playercharacter {
     width: 1280px;
 } 
 
+.content {
+    align-items: center;
+    justify-content: end;
+}
+
 .content2::-webkit-scrollbar {
     display: none;
 }
@@ -129,6 +134,11 @@ input, label, .playercharacter {
     position: relative;
     margin-left: 50px;
     margin-right: 50px;
+    transition: ease-in 0.03s;
+}
+
+.card:hover {
+    scale: 1.05;
 }
 
 .card label {
