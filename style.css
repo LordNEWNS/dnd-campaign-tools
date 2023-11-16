@@ -116,6 +116,11 @@ input, label, .playercharacter {
     font-size: 24px;
 }
 
+#DcDisplay {
+    position: absolute;
+    bottom: -60px;
+}
+
 .CapCalcInput {
     display: flex;
     flex-direction: column;
