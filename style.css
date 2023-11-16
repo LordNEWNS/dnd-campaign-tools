@@ -5,13 +5,13 @@ input::-webkit-inner-spin-button {
 
 body {
     display: flex;
-    min-height: 100vh;
+    max-height: 100vh;
+    height: 100vh;
     flex-direction: column;
     margin: 0;
 }
 
 .home {
-    height: 28px;
     display: flex;
 }
 
@@ -19,14 +19,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5px;
-    margin-left: 20px;
+    border-radius: 5px;
+    padding: 5px 9px;
+    margin-top: 20px;
     transition: ease-out 0.3s;
     background: linear-gradient(rgba(212, 175, 55, 0.699), rgba(212, 175, 55, 0));
 }
 
 .homebtn:hover {
-    background-color: rgb(212, 175, 55, 0.699);
+    background-color: rgba(212, 175, 55, 0.479);
     transform-origin: top center;
 
 }
@@ -40,14 +41,17 @@ body {
     text-align: center;
 }
 
-input, label {
+input, label, .playercharacter {
     display: block;
 }
 
 .Body {
-    flex: 1;
+    color: blanchedalmond;
+    align-items: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex: 1;
+    background-color: rgb(14, 14, 14);
 }
 
 .spacer {
@@ -55,12 +59,52 @@ input, label {
     flex-direction: row;
 }
 
-.main {
-    color: blanchedalmond;
-    align-items: center;
+
+.content, .content2 {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    height: 200px;
+    width: 1280px;
+} 
+
+.content2::-webkit-scrollbar {
+    display: none;
+}
+
+.content2 {
+    background-color: rgba(255, 255, 255, 0.02);
+    flex-direction: row;
+    align-items: center;
+    height: 230px;
+    gap: 30px;
+    justify-content: space-around;
+    overflow: auto;
+}
+
+.playercharacter {
+    height: 190px;
+    width: 190px;
+    background-size: 100%;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#Jadeth {
+    background-image: url(imgs/player-charcters/jadeth.png);
+}
+
+.scrolldownparent {
+    max-height: calc(100vh - 218px);
+    width: 1280;
+    overflow: hidden;
+}
+
+.scrolldownchild {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding-right: 17px;
 }
 
 #Dc {
@@ -77,6 +121,21 @@ input, label {
     
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.card label {
+    position: absolute;
+    font-size: 30px;
+    font-weight: 700;
+    top: -20px;
+}
+
 .padding {
     flex: 1;
 }
@@ -87,15 +146,29 @@ input, label {
     flex-direction: column;
 }
 
-header, footer, .subheader, #DcDisplay {
+header, footer, #DcDisplay {
     background: linear-gradient(133deg, rgb(12, 0, 26) 30%, rgb(73, 14, 139));
 }
 
 header {
-    height: 100px;
+    
     display: flex;
     flex-direction: column;
     border-bottom: 2px solid rgb(212, 175, 55);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #captcalcimag {
@@ -154,9 +227,7 @@ header {
     z-index: 1;
 }
 
-.main {
-    background-color: rgb(14, 14, 14);
-}
+
 
 .menue {
     display: flex;
@@ -244,8 +315,3 @@ input {
     justify-content: space-between;
 }
 
-.SideMenue {
-    background-color: aquamarine;
-    width: 200px;
-
-}
