@@ -137,6 +137,14 @@ input, label, .playercharacter {
     transition: ease-in 0.03s;
 }
 
+.scrollanchor {
+    position: relative;
+}
+
+.scroll {
+    position: absolute;
+}
+
 .card:hover {
     scale: 1.05;
 }
