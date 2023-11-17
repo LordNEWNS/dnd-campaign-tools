@@ -72,6 +72,10 @@ input, label, .playercharacter {
     justify-content: end;
 }
 
+.content h1 {
+    font-size: 50px;
+}
+
 .content2::-webkit-scrollbar {
     display: none;
 }
@@ -95,6 +99,7 @@ input, label, .playercharacter {
     cursor: pointer;
 }
 
+
 #playercharacters {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgb(12, 0, 26);
@@ -114,6 +119,18 @@ input, label, .playercharacter {
 
 #henry {
     background-image: url(imgs/player-charcters/henry.jpg);
+}
+
+#juno {
+    background-image: url(imgs/player-charcters/juno.jpg);
+}
+
+#olaf {
+    background-image: url(imgs/player-charcters/olaf.jpg);
+}
+
+#matanza {
+    background-image: url(imgs/player-charcters/matanza.jpg);
 }
 
 .scrolldownparent {
@@ -173,7 +190,7 @@ input, label, .playercharacter {
 
 .card label {
     position: absolute;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 700;
     top: -20px;
 }
