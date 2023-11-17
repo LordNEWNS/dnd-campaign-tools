@@ -6,6 +6,7 @@ let StatModifier = 3;
 let ClassBonus = 0;
 let DC = 0;
 
+// detects when value is changed in imput
 document.getElementById('MaxHealth').addEventListener('input', updateDC);
 document.getElementById('CurrentHealth').addEventListener('input', updateDC);
 document.getElementById('AbilityModifier').addEventListener('input', updateDC);
@@ -15,6 +16,8 @@ document.getElementById('Legendary').addEventListener('input', updateDC);
 
 function updateDC () {
     GetValues ();
+
+    // makes sure all values are number
     if (isNaN(HealthPercentagModifer) || isNaN(AilmentModifier) || isNaN(StatModifier)) {
         outPut.textContent = `Waiting for numbers`
         return;
