@@ -374,3 +374,19 @@ input {
     justify-content: space-between;
 }
 
+/* where style for charactersheets begins */
+
+.charactersheet {
+    background-image: url(/imgs/backgrounds/parchment.jpg);
+    height: 860px;
+    width: 680px;
+    position: relative;
+    background-size: 100% 100%;
+}
+
+.charsheetdye {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(73, 14, 139, 0.6);
+}
