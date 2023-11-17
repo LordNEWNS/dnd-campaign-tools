@@ -390,3 +390,55 @@ input {
     width: 100%;
     background-color: rgb(73, 14, 139, 0.6);
 }
+
+.playerpicture {
+    background-color: rgba(255, 255, 255, 0.315);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    height: 500px;
+    width: 200px;
+    clip-path: ellipse(49% 99% at 50% 100%);
+}
+
+.playerpictureborder {
+    background-color: rgba(0, 0, 0, 0.192);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20.5%);
+    height: 508px;
+    width: 208px;
+    clip-path: ellipse(49% 99% at 50% 100%);
+
+}
+
+#jadethfullbod {
+    background-image: url(imgs/player-charcters/jadeth-full-body.png);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    height: 500px;
+    width: 290px;
+    background-size: cover;
+    background-position: center center;
+    overflow: visible;
+}
+
+.statcontainerbackground {
+    background-color: rgba(0, 0, 0, 0.192);
+    height: 65px;
+    width: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.statcontainerforground {
+    background-color: rgba(255, 255, 255, 0.315);
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    clip-path: inset(0 0 0 0);
+}
