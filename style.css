@@ -427,10 +427,14 @@ input {
     overflow: visible;
 }
 
+.statcontainer {
+    width: 95px;
+}
+
 .statcontainerbackground {
     background-color: rgba(0, 0, 0, 0.192);
     height: 65px;
-    width: 125px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -442,3 +446,45 @@ input {
     height: calc(100% - 6px);
     clip-path: inset(0 0 0 0);
 }
+
+.playerstats {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    gap: 2%;
+    top: 250px;
+}
+
+.strcontainer, .chacontainer {
+    margin-top: 200px;
+}
+
+.strcontainer {
+    margin-right: -60px;
+}
+
+.chacontainer {
+    margin-left: -60px;
+}
+
+.concontainer {
+    margin-right: -60px;
+}
+
+.wiscontainer {
+    margin-left: -60px;
+}
+
+.concontainer, .wiscontainer {
+    margin-top: 100px;
+}
+
+.accontainer {
+    clip-path: path('M 338 754 Q 78 728 52 130 Q 208 156 338 52 Q 442 156 598 130 Q 598 728 338 754');
+    background-color: aliceblue;
+    height: 65px;
+    width: 80px;
+}
+
