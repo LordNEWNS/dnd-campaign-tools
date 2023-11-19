@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://127.0.0.1:5500/pages/playertemplate.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>player character</title>
+        <link rel="stylesheet" href="./player character_files/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <div class="home">
+                    <a href="http://127.0.0.1:5500/index.html"><div role="button" class="homebtn"><p>Home</p></div></a>
+                </div>
+                <div class="logo"><h1>Logo</h1></div>
+                <div class="subheader">
+                    <a href="http://127.0.0.1:5500/CaptureCalc.html"><div role="button" class="menue rim"><p>Tools</p></div></a>
+                    <a href="http://127.0.0.1:5500/pages/playertemplate.html"><div role="button" class="menue rim"><p>Campaigns</p></div></a>
+                    <a href="http://127.0.0.1:5500/pages/playertemplate.html"><div role="button" class="menue rim"><p>PCs</p></div></a>
+                    <a href="http://127.0.0.1:5500/pages/playertemplate.html"><div role="button" class="menue"><p>Rules</p></div></a>
+        
+                </div>
+            </div>
+        </header>
+        <div class="Body">
+            <div class="charactersheet">
+                <div class="charsheetdye"></div>
+                <div class="playerpictureborder"></div>
+                <div class="playerpicture"></div>
+                <div id="jadethfullbod"></div>
+                <div class="playernameplatecontainer">
+                    <div class="playernameplate">
+                        
+                    </div>
+                </div>
+                <div class="playerstats">
+                    <div class="statcontainer strcontainer">
+                        <div class="statcontainerbackground">
+                            <div class="statcontainerforground"></div>
+                        </div>
+                    </div>
+                    <div class="statcontainer concontainer">
+                        <div class="statcontainerbackground">
+                            <div class="statcontainerforground"></div>
+                        </div>
+                    </div>
+                    <div class="statcontainer dexcontainer">
+                        <div class="statcontainerbackground">
+                            <div class="statcontainerforground"></div>
+                        </div>
+                    </div>
+                    <div class="accontainer">
+                        <img class="shieldtrim" src="./player character_files/shield-black.svg" alt="">
+                        <img class="shieldcenter" src="./player character_files/shield-white.svg" alt="">
+                    </div>
+                    <div class="statcontainer intcontainer">
+                        <div class="statcontainerbackground">
+                            <div class="statcontainerforground"></div>
+                        </div>
+                    </div>
+                    <div class="statcontainer wiscontainer">
+                        <div class="statcontainerbackground">
+                            <div class="statcontainerforground"></div>
+                        </div>
+                    </div>
+                    <div class="statcontainer chacontainer">
+                        <div class="statcontainerbackground">
+                            <div class="statcontainerforground"></div>
+                        </div>
+                    </div>
+                </div>
+            
+
+            </div>
+            <div class="filler"></div>
+        </div>
+        <footer>
+        
+        </footer>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+            </body></html>

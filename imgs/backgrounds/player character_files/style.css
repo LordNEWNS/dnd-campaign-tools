@@ -1,0 +1,535 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+}
+
+body {
+    display: flex;
+    max-height: 100vh;
+    height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+
+.home {
+    display: flex;
+}
+
+.homebtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 5px 9px;
+    margin-top: 20px;
+    transition: ease-out 0.3s;
+    background: linear-gradient(rgba(212, 175, 55, 0.699), rgba(212, 175, 55, 0));
+}
+
+.homebtn:hover {
+    background-color: rgba(212, 175, 55, 0.479);
+    transform-origin: top center;
+
+}
+
+.homebtn p {
+    margin: 0px;
+    
+}
+
+.spacer input {
+    text-align: center;
+}
+
+input, label, .playercharacter {
+    display: block;
+}
+
+.Body {
+    color: blanchedalmond;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: rgb(14, 14, 14);
+}
+
+.spacer {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.content, .content2 {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 1280px;
+} 
+
+.content {
+    align-items: center;
+    justify-content: end;
+}
+
+.content h1 {
+    font-size: 50px;
+}
+
+.content2::-webkit-scrollbar {
+    display: none;
+}
+
+.content2 {
+    background-color: rgba(255, 255, 255, 0.02);
+    flex-direction: row;
+    align-items: center;
+    height: 230px;
+    gap: 40px;
+    justify-content: left;
+    overflow: auto;
+}
+
+.playercharacter {
+    height: 190px;
+    width: 190px;
+    background-size: 100%;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+#playercharacters {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(12, 0, 26);
+}
+
+#Jadeth {
+    background-image: url(imgs/player-charcters/jadeth.png);
+}
+
+#slender {
+    background-image: url(imgs/player-charcters/slender.jpg);
+}
+
+#shade {
+    background-image: url(imgs/player-charcters/shade.jpg);
+}
+
+#henry {
+    background-image: url(imgs/player-charcters/henry.jpg);
+}
+
+#juno {
+    background-image: url(imgs/player-charcters/juno.jpg);
+}
+
+#olaf {
+    background-image: url(imgs/player-charcters/olaf.jpg);
+}
+
+#matanza {
+    background-image: url(imgs/player-charcters/matanza.jpg);
+}
+
+.scrolldownparent {
+    max-height: calc(100vh - 218px);
+    width: 1280;
+    overflow: hidden;
+}
+
+.scrolldownchild {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding-right: 17px;
+}
+
+#Dc {
+    font-size: 24px;
+}
+
+#DcDisplay {
+    position: absolute;
+    bottom: -60px;
+}
+
+.CapCalcInput {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    text-align: center;
+    width: 170px;
+    align-items: center;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    margin-left: 50px;
+    margin-right: 50px;
+    transition: ease-in 0.03s;
+}
+
+.scrollanchor {
+    position: relative;
+}
+
+.scroll {
+    position: absolute;
+}
+
+.card:hover {
+    scale: 1.05;
+}
+
+.card label {
+    position: absolute;
+    font-size: 35px;
+    font-weight: 700;
+    top: -20px;
+}
+
+.padding {
+    flex: 1;
+}
+
+.BodyCalc {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer, #DcDisplay {
+    background: linear-gradient(133deg, rgb(12, 0, 26) 30%, rgb(73, 14, 139));
+}
+
+header {
+    
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid rgb(212, 175, 55);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#captcalcimag {
+    background-image: url(imgs/monster.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1000px;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.filler {
+    background-color: rgb(14, 14, 14);
+    flex: 1;
+}
+
+#imgcuttopleft, #imgcutbotleft, #imgcuttopright, #imgcutbotright {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(imgs/monster.jpg);
+    background-size: 720px 1000px;
+    background-position: -10px -90px;
+}
+
+#imgcuttopleft {
+    clip-path: circle(14% at 100% 0);
+}
+
+#imgcutbotleft {
+    clip-path: circle(14% at 100% 100%);
+}
+
+#imgcuttopright {
+    clip-path: circle(14% at 0 0);
+} 
+
+#imgcutbotright {
+    clip-path: circle(14% at 0 100%);
+}
+
+#DcDisplay {
+    padding: 4px 8px;
+    border: 2px solid rgb(212, 175, 55);
+}
+
+#DcDisplay p {
+    margin: 0;
+}
+
+.inverscorner {
+    height: 80px;
+    width: 80px;
+    border-radius: 100px;
+    z-index: 1;
+}
+
+
+
+.menue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    flex: 1 1 auto;
+    width: 135px;
+    background-color: rgba(0, 0, 0, 0.39);
+    transition: ease-out 0.3s;
+
+}
+
+.menue:hover {
+    width: 190px;
+}
+
+.rim {
+    border-right: 1px solid rgb(212, 175, 55);
+}
+
+header a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.subheader {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    height: 70px;
+    justify-content: center;
+}
+
+footer {
+    height: 10px;
+    padding: 8px;
+}
+
+input {
+    border-width: 3px;
+    border-color: rgb(8, 0, 17);
+    border-radius: 5px;
+    width: 60px;
+    height: 15px;
+    border-radius: 15px;
+}
+
+.goldborder {
+    width: 670px;
+    height: 270px;
+    position: absolute;
+    border: 2px double rgb(212, 175, 55);
+    
+}
+
+.CaptureCalc {
+    color: blanchedalmond;
+    height: 300px;
+    width: 700px;
+    background: linear-gradient(133deg, rgb(12, 0, 26) 30%, rgb(73, 14, 139));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px;
+    border-radius: 25px;
+    position: relative;
+}
+
+#calcContent {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    gap: 40px;
+}
+
+.spheres {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* where style for charactersheets begins */
+
+.charactersheet {
+    background-image: url(/imgs/backgrounds/parchment.jpg);
+    height: 860px;
+    width: 680px;
+    position: relative;
+    background-size: 100% 100%;
+}
+
+.charsheetdye {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(73, 14, 139, 0.6);
+}
+
+.playerpicture {
+    background-color: rgba(255, 255, 255, 0.315);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    height: 500px;
+    width: 200px;
+    clip-path: ellipse(49% 99% at 50% 100%);
+}
+
+.playerpictureborder {
+    background-color: rgba(0, 0, 0, 0.192);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20.5%);
+    height: 508px;
+    width: 208px;
+    clip-path: ellipse(49% 99% at 50% 100%);
+
+}
+
+#jadethfullbod {
+    background-image: url(imgs/player-charcters/jadeth-full-body.png);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    height: 500px;
+    width: 290px;
+    background-size: cover;
+    background-position: center center;
+    overflow: visible;
+}
+
+.statcontainer {
+    width: 95px;
+}
+
+.statcontainerbackground {
+    background-color: rgba(0, 0, 0, 0.192);
+    height: 65px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.statcontainerforground {
+    background-color: rgba(255, 255, 255, 0.315);
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    clip-path: inset(0 0 0 0);
+}
+
+.playerstats {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    gap: 2%;
+    top: 250px;
+}
+
+.playernameplatecontainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.playernameplate {
+    width: 500px;
+    height: 100px;
+    background-image: url(imgs/backgrounds/goldplayerbanner.png);
+    background-size: 104% 230%;
+    background-position: center;
+}
+
+.nameplateimage {
+    height: 100%;
+    width: 100%;
+}
+
+.strcontainer, .chacontainer {
+    margin-top: 250px;
+}
+
+.strcontainer {
+    margin-right: -90px;
+}
+
+.chacontainer {
+    margin-left: -90px;
+}
+
+.concontainer {
+    margin-right: -60px;
+}
+
+.wiscontainer {
+    margin-left: -60px;
+}
+
+.dexcontainer, .intcontainer {
+    margin-top: 50px;
+}
+
+
+.concontainer, .wiscontainer {
+    margin-top: 150px;
+}
+
+.accontainer {
+    height: 80px;
+    width: 80px;
+    position: relative;
+    margin-top: -8px;
+}
+
+.shieldtrim {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    opacity: 0.192;
+}
+
+.shieldcenter {
+    position: absolute;
+    height: calc(100% - 6px);
+    width: calc(100% - 6px);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    opacity: 0.335;
+}
