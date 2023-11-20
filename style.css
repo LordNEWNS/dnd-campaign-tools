@@ -395,7 +395,7 @@ input {
 
 .playerpicture {
     position: absolute;
-    top: 344px;
+    top: 329px;
     left: 50%;
     transform: translate(-50%, -20%);
     height: 500px;
@@ -427,7 +427,7 @@ input {
 
 .playerpictureborder {
     position: absolute;
-    top: 344px;
+    top: 329px;
     left: 50%;
     transform: translate(-50%, -20.5%);
     height: 508px;
@@ -439,7 +439,7 @@ input {
 #jadethfullbod {
     background-image: url(imgs/player-charcters/jadeth-full-body.png);
     position: absolute;
-    top: 344px;
+    top: 329px;
     left: 50%;
     transform: translate(-50%, -20%);
     height: 500px;
@@ -504,7 +504,7 @@ input {
     justify-content: center;
     position: absolute;
     gap: 2%;
-    top: 150px;
+    top: 135px;
 }
 
 .playernameplatecontainer {
@@ -623,7 +623,7 @@ input {
     width: 180px;
     height: 260px;
     position: absolute;
-    bottom: 212px;
+    bottom: 228px;
 }
 
 /* gold border elements */
@@ -718,7 +718,7 @@ input {
     background-size: cover;
     width: 60px;
     aspect-ratio: 3/2;
-    bottom: 85px;
+    bottom: 92px;
     left: 50%;
     transform: translate(-50%, 0);
 }
@@ -728,7 +728,7 @@ input {
     width: 600px;
     height: 200px;
     position: absolute;
-    bottom: 6px;
+    bottom: 13px;
     left: 40px;
 }
 
@@ -791,7 +791,7 @@ input {
     line-height: 130px;
     height: 130px;
     aspect-ratio: 1 / 1;
-    background-color: rgba(0, 255, 255, 0.212);
+    background-color: rgba(0, 0, 0, 0.212);
 }
 
 .chariteminfo,
@@ -804,7 +804,7 @@ input {
     width: 15px;
     height: 40px;
     position: absolute;
-    bottom: 87px;
+    bottom: 94px;
 }
 
 .bracefillright {
