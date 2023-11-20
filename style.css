@@ -377,11 +377,13 @@ input {
 /* where style for charactersheets begins */
 
 .charactersheet {
+    margin-top: 30px;
     background-image: url(/imgs/backgrounds/parchment.jpg);
     height: 960px;
     width: 680px;
     position: relative;
     background-size: 100% 100%;
+    border: double 10px #F4AB0B;
 }
 
 .charsheetdye {
@@ -596,7 +598,7 @@ input {
     opacity: 0.335;
 }
 
-.profandlang {
+.profandlang, .profskill {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -604,9 +606,16 @@ input {
     height: 260px;
     position: absolute;
     bottom: 212px;
-    left: 40px;
     border: solid 1px #F4AB0B;
     background-color: rgba(0, 0, 0, 0.192);
+}
+
+.profskill {
+    right: 40px;
+}
+
+.profandlang {
+    left: 40px;
 }
 
 .charlanguages {
@@ -615,12 +624,14 @@ input {
     background-color: rgba(255, 255, 255, 0.315);
 }
 
-.profandlang h4 {
+.profandlang h4,
+.profskill h4 {
     margin: 0;
     text-align: center;
 }
 
-.profandlang p {
+.profandlang p,
+.profskill p {
     margin: 5px;
     font-size: small;
 }
@@ -635,4 +646,44 @@ input {
 
 .charprof::-webkit-scrollbar {
     display: none;
+}
+
+.skillbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5.15%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.144);
+}
+
+.skillbox2 {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.skillbox p {
+    margin: 0 4px;
+}
+
+.skillbox .skill {
+    width: 91px;
+    margin-left: -25px;
+}
+
+.proffalse {
+    height: 70%;
+    aspect-ratio: 1 / 1;
+    border-radius: 100%;
+    border: solid 1px #F4AB0B;
+    margin-left: 4px;
+
+}
+
+.proftrue {
+    height: 70%;
+    aspect-ratio: 1 / 1;
+    border-radius: 100%;
+    border: solid 1px #F4AB0B;
+    margin-left: 4px;
+    background-color: #F4AB0B;
 }
