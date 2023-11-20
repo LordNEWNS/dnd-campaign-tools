@@ -394,7 +394,6 @@ input {
 }
 
 .playerpicture {
-    background-color: rgba(255, 255, 255, 0.315);
     position: absolute;
     top: 344px;
     left: 50%;
@@ -404,8 +403,29 @@ input {
     clip-path: ellipse(49% 99% at 50% 100%);
 }
 
-.playerpictureborder {
+/* background colour for player cards fileds*/
+
+.playerpictureborder,
+.statcontainerbackground,
+.profandlang,
+.profskill,
+.characterextras {
     background-color: rgba(0, 0, 0, 0.192);
+}
+
+.playerpicture,
+.statcontainerforground,
+.charlanguages,
+.charprof,
+.charpet,
+.charitem,
+.iniandmovement {
+    background-color: rgba(255, 255, 255, 0.315)
+}
+
+
+
+.playerpictureborder {
     position: absolute;
     top: 344px;
     left: 50%;
@@ -442,7 +462,6 @@ input {
 
 .statcontainerbackground {
     position: relative;
-    background-color: rgba(0, 0, 0, 0.192);
     height: 65px;
     width: 100%;
     display: flex;
@@ -451,7 +470,6 @@ input {
 }
 
 .statcontainerforground {
-    background-color: rgba(255, 255, 255, 0.315);
     width: calc(100% - 6px);
     height: calc(100% - 6px);
     clip-path: inset(0 0 0 0);
@@ -606,9 +624,17 @@ input {
     height: 260px;
     position: absolute;
     bottom: 212px;
-    border: solid 1px #F4AB0B;
-    background-color: rgba(0, 0, 0, 0.192);
 }
+
+/* gold border elements */
+.profandlang,
+.profskill,
+.characterextras,
+.proffalse,
+.proftrue {
+    border: solid 1px #F4AB0B;
+}
+
 
 .profskill {
     right: 40px;
@@ -621,17 +647,18 @@ input {
 .charlanguages {
     width: calc(100% - 4px);
     margin-top: 2px;
-    background-color: rgba(255, 255, 255, 0.315);
 }
 
 .profandlang h4,
-.profskill h4 {
+.profskill h4,
+.characterextras h4 {
     margin: 0;
     text-align: center;
 }
 
 .profandlang p,
-.profskill p {
+.profskill p,
+.characterextras p {
     margin: 5px;
     font-size: small;
 }
@@ -641,7 +668,6 @@ input {
     margin: 2px 0px;
     flex: 1;
     width: calc(100% - 4px);
-    background-color: rgba(255, 255, 255, 0.315);
 }
 
 .charprof::-webkit-scrollbar {
@@ -674,7 +700,6 @@ input {
     height: 70%;
     aspect-ratio: 1 / 1;
     border-radius: 100%;
-    border: solid 1px #F4AB0B;
     margin-left: 4px;
 
 }
@@ -683,7 +708,115 @@ input {
     height: 70%;
     aspect-ratio: 1 / 1;
     border-radius: 100%;
-    border: solid 1px #F4AB0B;
     margin-left: 4px;
     background-color: #F4AB0B;
+}
+
+.runningmanpng {
+    position: absolute;
+    background-image: url(imgs/playercard-images/runningicongold.png);
+    background-size: cover;
+    width: 60px;
+    aspect-ratio: 3/2;
+    bottom: 85px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.characterextras {
+    display: flex;
+    width: 600px;
+    height: 200px;
+    position: absolute;
+    bottom: 6px;
+    left: 40px;
+}
+
+.characterextras h3 {
+    margin: 0;
+}
+
+.iniandmovement p {
+    font-size: 29px;
+}
+
+.characterextrascenter {
+    width: 95px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.iniandmovement {
+    margin: 1px;
+    flex: 1;
+    text-align: center;
+}
+
+.initop {
+    margin-top: 2px;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+
+.inibot {
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+.charpet,
+.charitem {
+    flex: 1;
+    display: flex;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    align-items: center;
+}
+
+.charpet {
+    margin-left: 2px;
+}
+
+.charitem {
+    margin-right: 2px;
+}
+
+.charpet img,
+.charitem img {
+    text-align: center;
+    line-height: 130px;
+    height: 130px;
+    aspect-ratio: 1 / 1;
+    background-color: rgba(0, 255, 255, 0.212);
+}
+
+.chariteminfo,
+.charpetinfo {
+    height: 100%;
+    width: 120px;
+}
+
+.goldbracefill {
+    width: 15px;
+    height: 40px;
+    position: absolute;
+    bottom: 87px;
+}
+
+.bracefillright {
+    background-image: url(imgs/playercard-images/goldbraceright.png);
+    background-size: cover;
+    background-position: center right;
+    right: 296px;
+}
+
+.bracefillleft {
+    left: 299px;
+    background-size: cover;
+    background-position: center left;
+    background-image: url(imgs/playercard-images/goldbraceleft.png);
 }
