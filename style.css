@@ -524,10 +524,19 @@ input {
     margin-top: -8px;
 }
 
+.shieldgoldoutline {
+    position: absolute;
+    height: calc(100%);
+    width: calc(100%);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
 .shieldtrim {
     position: absolute;
-    height: 100%;
-    width: 100%;
+    height: calc(100%);
+    width: calc(100%);
     top: 50%;
     left: 50%;
     translate: -50% -50%;
@@ -537,7 +546,7 @@ input {
 .shieldcenter {
     position: absolute;
     height: calc(100% - 6px);
-    width: calc(100% - 6px);
+    width: calc(100% - 7px);
     top: 50%;
     left: 50%;
     translate: -50% -50%;
