@@ -453,7 +453,29 @@ input {
     width: calc(100% - 6px);
     height: calc(100% - 6px);
     clip-path: inset(0 0 0 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.statcontainer .stattitle {
+    margin: 0;
+    margin-top: -19px;
+    text-align: center;
+
+}
+
+.statcontainerforground .statmodifiredisplay {
+    font-size: 29px;
+    margin: 0;
+    margin-top: 13px;
+}
+.statcontainerforground .stattotal {
+    margin: 0;
+    margin-top: -3px;
+    font-size: 12px;
+}
+
 
 .playerstats {
     width: 100%;
@@ -481,6 +503,10 @@ input {
     background-image: url(imgs/backgrounds/goldplayerbanner.png);
     background-size: 104% 230%;
     background-position: center;
+}
+
+.playernameplate .charactername {
+    text-align: center;
 }
 
 .nameplateimage {
@@ -522,6 +548,20 @@ input {
     width: 80px;
     position: relative;
     margin-top: -8px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+
+.accontainer h3 {
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.accontainer p {
+    margin-top: -11px;
+    font-size: 43px;
 }
 
 .shieldgoldoutline {
