@@ -563,6 +563,20 @@ input {
     margin-top: 150px;
 }
 
+.displaystatproper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.displaystatproper span {
+    margin-top: 13px;
+    position: absolute;
+    right: 100%;
+
+}
+
 .accontainer {
     height: 80px;
     width: 80px;
@@ -766,6 +780,16 @@ input {
     flex-direction: column;
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
+    align-items: center;
+}
+
+.inibot h3 {
+    margin-top: 10px;
+}
+
+.inibot span,
+.inibot p {
+    margin: 0;
 }
 
 .charpet,
